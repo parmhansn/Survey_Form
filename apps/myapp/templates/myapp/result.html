@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Result</title>
+
+    <style>
+        #container{
+            margin: auto;
+            margin-left: 400px;
+            width: 40%;
+            display: inline-block;
+            padding: 10px;
+            border: 2px solid black;
+        }
+    </style>
+
+
+
+</head>
+<body>
+        <br>
+        <br>
+    
+
+    <div id=container>
+        <!-- <p>{{request.session.formdata}}</p> -->
+        <p>Thanks for submitting this form! You have submitted this form {{request.session.count}} times now.</p>
+        <p>Name: {{request.session.formdata.name}}</p>
+        <p>Location: {{request.session.formdata.location}}</p>
+        <p>Language: {{request.session.formdata.language}}</p>
+        <p>Comment: {{request.session.formdata.comment}}</p>
+        <p><a href="/"><button>Go Back</button></a></p>
+        
+    </div>
+     
+</body>
+</html>
